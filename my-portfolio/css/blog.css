@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* ==========================================
+   サイバー・サイエンスダークモードデザイン
+   ========================================== */
+
+/* 1. 画面全体をディープダーク（漆黒）にする */
+body {
+    background-color: #0b0f19 !important;
+    color: #cbd5e1 !important; /* 全体の文字を明るいグレーにして読みやすく */
+}
+
+/* 2. ヘッダーカバーをネオンのグラデーションにする */
+.sub-cover {
+    background: linear-gradient(135deg, #091e3a 0%, #100b26 100%) !important;
+    border-bottom: 2px solid #00f2fe; /* ネオンブルーのアンダーライン */
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    height: 300px;
+    margin-bottom: 4rem;
+}
+
+/* ヘッダー内のテキストを白とネオンに調整 */
+.logo-text {
+    color: #00f2fe !important; /* ロゴをネオンブルーに */
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.6) !important;
+}
+.page-title {
+    color: #ffffff !important;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4) !important;
+}
+.main-nav a {
+    color: #94a3b8 !important;
+    text-shadow: none !important;
+}
+.main-nav a:hover {
+    color: #00f2fe !important;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.8) !important;
+}
+
+/* 3. 記事・制作物カード（.item や .post）を半透明のサイバーパネルにする */
+.item, .post {
+    background: rgba(17, 24, 39, 0.7) !important; /* 透き通るダーク背景 */
+    border: 1px solid rgba(0, 242, 254, 0.15) !important; /* 薄いネオンの枠線 */
+    border-radius: 16px !important;
+    padding: 2rem !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px); /* ガラスのようなボカシ効果 */
+    transition: all 0.4s ease !important;
+}
+
+/* マウスを乗せたときにネオン光るアニメーション */
+.item:hover, .post:hover {
+    transform: translateY(-5px) !important;
+    border-color: #00f2fe !important; /* 枠線がくっきり光る */
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.3) !important; /* 青いバックライト */
+}
+
+/* 4. 見出しの文字を光らせる */
+.item strong, .post-title {
+    color: #00f2fe !important; /* ネオンブルー */
+    font-size: 1.4rem;
+    text-shadow: 0 0 5px rgba(0, 242, 254, 0.3);
+}
+
+/* 5. 画像（スクリーンショット）の背景 */
+.item img, .post-thumbnail {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    background-color: #05070c !important;
+}
+
+/* 6. サイドバーやフッターの微調整 */
+.sidebar .heading-medium {
+    color: #00f2fe !important;
+    border-bottom: 2px solid #00f2fe !important;
+    text-shadow: 0 0 5px rgba(0, 242, 254, 0.3);
+}
+.side-menu a {
+    color: #94a3b8 !important;
+}
+.side-menu a:hover {
+    color: #00f2fe !important;
+}
+.page-footer {
+    background-color: #05070c !important;
+    border-top: 1px solid rgba(0, 242, 254, 0.2) !important;
+}
+.info th {
+    color: #00f2fe !important;
+}
+.info td {
+    color: #cbd5e1 !important;
+}
