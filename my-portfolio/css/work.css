@@ -1,1 +1,93 @@
-@charset "UTF-8";
+@charset "UTF-8";@charset "UTF-8";
+
+/* ==========================================
+   Worksページ用：サイバーダークモードスタイル
+   ========================================== */
+
+/* 画面全体をディープダークにする */
+body {
+    background-color: #0b0f19 !important;
+    color: #cbd5e1 !important;
+}
+
+/* ヘッダーカバーをネオンブルーのグラデーションにする */
+.sub-cover {
+    background: linear-gradient(135deg, #091e3a 0%, #100b26 100%) !important;
+    border-bottom: 2px solid #00f2fe;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    height: 300px;
+    margin-bottom: 4rem;
+}
+
+/* ヘッダー内テキストの調整 */
+.logo-text {
+    color: #00f2fe !important;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.6) !important;
+}
+.page-title {
+    color: #ffffff !important;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4) !important;
+}
+.main-nav a {
+    color: #94a3b8 !important;
+    text-shadow: none !important;
+}
+.main-nav a:hover {
+    color: #00f2fe !important;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.8) !important;
+}
+
+/* 制作物カード（.item）を半透明のサイバーパネルにする */
+.item {
+    background: rgba(17, 24, 39, 0.7) !important;
+    border: 1px solid rgba(0, 242, 254, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease !important;
+}
+
+/* ホバー時にネオンブルーに光る */
+.item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #00f2fe !important;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.3) !important;
+}
+
+/* タイトルをネオンカラーにする */
+.item strong {
+    color: #00f2fe !important;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(0, 242, 254, 0.3);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* 説明テキストのカラー調整 */
+.item p {
+    color: #94a3b8 !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 画像（スクリーンショット）の枠線と背景調整 */
+.item img {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    background-color: #05070c !important;
+    width: 100%;
+    height: auto;
+}
+
+/* フッターエリアのサイバー調整 */
+.page-footer {
+    background-color: #05070c !important;
+    border-top: 1px solid rgba(0, 242, 254, 0.2) !important;
+}
+.info th {
+    color: #00f2fe !important;
+}
+.info td, .info td a {
+    color: #cbd5e1 !important;
+}
