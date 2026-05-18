@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blog - My Portfolio</title>
+        <meta name="description" content="技術ブログや日々の学習の記録" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/blog.css" />
+    </head>
+
+    <body>
+        <div class="sub-cover cover-blog">
+            <header class="page-header wrapper">
+                <h1 class="align-center">
+                    <a href="index.html" class="logo-text font-english"
+                        >My Portfolio</a
+                    >
+                </h1>
+                <nav>
+                    <ul class="main-nav font-english">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english">Blog</h2>
+        </div>
+
+        <main class="wrapper blog-contents">
+            <div class="main-contents">
+                
+                <article class="post" id="java-post">
+                    <header>
+                        <h2 class="post-title">Java</h2>
+                        <div class="post-info">
+                            <time class="post-date" datetime="2026-05-13">2026年5月13日</time>
+                        </div>
+                    </header>
+                    <img
+                        class="post-thumbnail"
+                        src="images/Java.Sample2026-05-18 101510.png"
+                        alt="山手線ゲームのJavaコード"
+                    />
+                    <p>Javaの研修の一環で、配列、ループ処理（do-while文、for文）、条件分岐（if文）を組み合わせた「山手線ゲーム」のプログラムを作成しました。ユーザーの入力判定だけでなく、CPUの自動解答ロジックも組み込んだ本格的なコンソールゲームです。</p>
+                </article>
+                
+                <article class="post" id="sql-post">
+                    <header>
+                        <h2 class="post-title">SQL (データベース)</h2>
+                        <div class="post-info">
+                            <time class="post-date" datetime="2026-05-18">2026年5月18日</time>
+                        </div>
+                    </header>
+                    <img 
+                        class="post-thumbnail" 
+                        src="images/SQL.Sample 2026-05-12 142013.png" 
+                        alt="SQLデータベースの画面" 
+                    />
+                    <p>データベース研修にて、データの抽出や操作の基本を学びました。複数のテーブルを結合する<code>JOIN</code>や、特定の条件でデータを絞り込む<code>WHERE</code>、グループ化する<code>GROUP BY</code>などの構文を用いて、複雑な条件でのデータ検索をスムーズに行えるよう練習を重ねています。</p>
+                </article>    
+         
+                <article class="post" id="html-post">
+                    <header>
+                         <h2 class="post-title">HTML/CSS</h2>
+                         <div class="post-info">
+                             <time class="post-date" datetime="2026-05-18">2026年5月18日</time>
+                         </div>
+                     </header>
+                     <img
+                          class="post-thumbnail"
+                          src="images/HTML.Sample2026-05-18 110301.png"
+                          alt="ポートフォリオ作成の画面"
+                     />
+                     <p>研修で学んだHTML/CSSの知識を活かして、自身のポートフォリオサイトを作成しました。セマンティックなマークアップ（適切なタグ選び）や、レスポンシブ対応（スマホ表示）を意識してコーディングを行っています。</p>
+                </article>
+
+                <article class="post" id="spring-post">
+                    <header>
+                        <h2 class="post-title">Spring Boot (Webアプリケーション開発)</h2>
+                        <div class="post-info">
+                            <time class="post-date" datetime="2026-05-18">2026年5月18日</time>
+                        </div>
+                    </header>
+                    <img 
+                        class="post-thumbnail" 
+                        src="images/Java.Sample2026-05-18 101510.png" 
+                        alt="Springの画面" 
+                    />
+                    <p>JavaのWebフレームワークであるSpring Bootを用いたアプリケーション開発を学び始めました。MVC（Model-View-Controller）モデルの概念を理解し、ブラウザからのリクエストに対して適切な画面を表示したり、データベースと連携してデータを画面に表示させる仕組みの構築に取り組んでいます。</p>
+                </article>
+
+            </div> <aside class="sidebar">
+                <h3 class="heading-medium font-english">Category</h3>
+                <ul class="side-menu">
+                    <li><a href="#java-post">Java</a></li>
+                    <li><a href="#sql-post">SQL</a></li>
+                    <li><a href="#html-post">HTML/CSS</a></li>
+                    <li><a href="#spring-post">Spring</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer class="page-footer">
+            <h3 class="heading-large font-english">Contact & Info</h3>
+            <table class="info">
+                <tr>
+                    <th>Email</th>
+                    <td>marutaso@cac.co.jp</td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="https://github.com/sosuke1028">@sosuke1028</a></td>
+                </tr>
+            </table>
+            <div class="copyright">
+                <small>&copy; 2026 My Portfolio</small>
+            </div>
+        </footer>
+    </body>
+</html>
